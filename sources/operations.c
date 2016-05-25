@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   operations.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: klescaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/09 10:55:13 by klescaud          #+#    #+#             */
-/*   Updated: 2016/05/11 13:12:57 by klescaud         ###   ########.fr       */
+/*   Created: 2016/05/12 11:10:36 by klescaud          #+#    #+#             */
+/*   Updated: 2016/05/25 14:58:35 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include <push_swap.h>
 
-# include <libft.h>
+void		op_s(int *tab)
+{
+	int		tmp;
+}
 
-/*
-** -----------------------------------------------------------------------------
-** Parsing related functions (parser.c) :
-*/
+void		op_p(int *src, int *dst)
+{
 
-int		ps_parsing(int *tab, char **values);
-int		is_value(char *n);
-int		check_double(int *tab, int n, int i);
+}
 
-#endif
+void		op_r(int *tab)
+{
+
+}
+
+void		op_rr(int *tab)
+{
+
+}

@@ -6,7 +6,7 @@
 #    By: ksoulard <ksoulard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/01/11 13:44:49 by ksoulard          #+#    #+#              #
-#    Updated: 2016/05/09 13:47:59 by klescaud         ###   ########.fr        #
+#    Updated: 2016/05/11 13:24:54 by klescaud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ EXT =		.c
 
 FLAGS =		-Wall -Wextra -Werror -g
 
-FILE =		main array_op
+FILE =		main parser
 
 SOURCE = 	sources/
 

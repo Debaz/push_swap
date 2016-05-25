@@ -6,7 +6,7 @@
 /*   By: klescaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 10:55:13 by klescaud          #+#    #+#             */
-/*   Updated: 2016/05/11 13:12:57 by klescaud         ###   ########.fr       */
+/*   Updated: 2016/05/10 14:06:19 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@
 
 /*
 ** -----------------------------------------------------------------------------
-** Parsing related functions (parser.c) :
+** Array manipulation functions:
 */
 
-int		ps_parsing(int *tab, char **values);
-int		is_value(char *n);
-int		check_double(int *tab, int n, int i);
+int		*create_tab(int len);
 
 #endif

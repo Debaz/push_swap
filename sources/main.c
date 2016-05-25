@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: klescaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/03/25 10:07:22 by klescaud          #+#    #+#             */
-/*   Updated: 2016/05/09 14:17:05 by klescaud         ###   ########.fr       */
+/*   Created: 2016/05/10 13:59:28 by klescaud          #+#    #+#             */
+/*   Updated: 2016/05/11 13:29:12 by klescaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,22 @@
 
 int		main(int ac, char **av)
 {
-	int		*array;
-	int		i;
+	int		tab[ac];
+	int		err;
 
-	i = 1;
-	array = NULL;
 	if (ac > 1)
-		while (i < ac)
+	{
+		tab[0] = ac;
+		err = ps_parsing(tab, av);
+		if (err != 0)
 		{
-			if (!check_double(array, ft_atoi(av[i])))
-			{
-				array = add_value(array, ft_atoi(av[i]));
-//				ft_putnbr(array[0]);
-//				ft_putchar(' ');
-				i++;
-			}
-			else
-			{
-				ft_putendl("Error");
-				free(array);
-				array = NULL;
-				break;
-			}
+			ft_putstr("Error : ");
+			ft_putnbr(err);			// DEBUG
+			ft_putendl("");
 		}
-	print_int_tab(array);
+		else
+			ft_putendl("Izokay");
+//			push_swap(tab);
+	}
 	return (0);
 }
